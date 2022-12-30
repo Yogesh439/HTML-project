@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Zero</title>
+    <!-- Internal CSS -->
+    <style>
+        /* tagname selector */
+        header {
+            background-color: yellowgreen;
+        }
+
+        /* using class selector */
+        .site-logo {
+            width: 29%;
+        }
+
+        .main-nav {
+            width: 70%;
+        }
+
+        /* group selector */
+        .site-logo,
+        .main-nav {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* layout css
+        CSS 2
+        1. display: inline-block
+        2. float
+
+        CSS 3
+        3. display: flex/grid 
+        */
+    </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+</head>
+<body>
+    <!-- 
+        1) Applying inline css on header elements.
+        2) Applying internal css on header layout.
+        3) Apply external css on overall page styling. 
+    -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="site-logo" title="NCIT" style="font-size: 60px; color: green; text-decoration: none;">Logo</a>
+            <nav class="main-nav">
+                <ul style="padding-left: 0; margin-top: 0; margin-bottom: 0; list-style: none;">
+                    <li class="active" style="display: inline-block;">
+                        <a href="#" title="Home" 
+                        style="text-decoration: none; color: white; font-size: 17px; text-transform: uppercase; padding: 12px;">Home</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="#" title="About" 
+                        style="text-decoration: none; font-size: 17px; color: rgba(255,255,255,0.7); text-transform: uppercase; padding: 12px;">About</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="#" title="Blog" 
+                        style="text-decoration: none; font-size: 17px; color: rgba(255,255,255,0.7); text-transform: uppercase; padding: 12px;">Blog</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="#" title="Contact" 
+                        style="text-decoration: none; font-size: 17px; color: rgba(255,255,255,0.7); text-transform: uppercase; padding: 12px;">Contact</a>
+                    </li>
+                    <li style="display: inline-block;">
+                        <a href="#" title="FAQs" 
+                        style="text-decoration: none; font-size: 17px; color: rgba(255,255,255,0.7); text-transform: uppercase; padding: 12px;">FAQs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header ends here -->
+    <figure class="banner">
+        <img src="./images/b1-image.jpg" alt="NICT Program" />
+        <figcaption class="banner__content">Dear Banner!</figcaption>
+    </figure>
+    <!-- banner ends here -->
+    <div class="sticky-data">
+        Hello sticky position!
+    </div>
+    <section class="entry-block">
+        <div class="container clearfix">
+            <div class="entry-block__content">
+                <div class="entry-block__detail">
+                    <h1 class="titlestyle1">Welcome to <strong>NCIT</strong></h1>
+                    <div class="entry-block__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima adipisci delectus aperiam ad? Pariatur sint ab, optio quaerat repellendus soluta necessitatibus a nisi! Aliquid nostrum deserunt numquam maxime eveniet.</p>
+                    </div>
+                    <a href="#" title="Read More" class="button">Read More</a>
+                </div>
+            </div>
+            <div class="entry-block__table">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Faculty</th>
+                            <th>Pass Out</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>BSc.CSIT</td>
+                            <td>+10000</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>BCA</td>
+                            <td>+7500</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>BIT</td>
+                            <td>+5000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="entry-block__image">
+                    <img src="./images/entry-image.jpg" alt="Welcome to NCIT" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- entry-block ends here -->
+    <div class="gallery-box">
+        <div class="container">
+            <h2 class="gallery-box__title">Gallery</h2>
+            <div class="gallery-box__data clearfix">
+                <div class="gallery-box__item">
+                    <a href="./images/g1-image.jpg" title="">
+                        <img src="./images/g1-image.jpg" alt="G1 Image" />
+                    </a>
+                </div>
+                <div class="gallery-box__item">
+                    <a href="./images/g2-image.jpg" title="">
+                        <img src="./images/g2-image.jpg" alt="G2 Image" />
+                    </a>
+                </div>
+                <div class="gallery-box__item">
+                    <a href="./images/g3-image.jpg" title="">
+                        <img src="./images/g3-image.jpg" alt="G3 Image" />
+                    </a>
+                </div>
+                <div class="gallery-box__item">
+                    <a href="./images/g4-image.jpg" title="">
+                        <img src="./images/g4-image.jpg" alt="G4 Image" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery-box ends here -->
+    <div class="faq-box">
+        <div class="container">
+            <h2 class="titlestyle2">FAQs</h2>
+            <dl class="accordion">
+                <dt>Question 1</dt>
+                <dd>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nulla eaque quaerat corrupti eum! Enim aliquam quis nostrum commodi quod asperiores obcaecati illo ipsam, officiis, animi, est nihil ducimus maxime.</p>
+                </dd>
+                <dt>Question 2</dt>
+                <dd>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta quidem recusandae explicabo rerum distinctio non laborum corrupti vel velit dicta reprehenderit, est fuga nobis magnam deserunt assumenda neque eius!</p>
+                </dd>
+                <dt>Question 3</dt>
+                <dd>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta quidem recusandae explicabo rerum distinctio non laborum corrupti vel velit dicta reprehenderit, est fuga nobis magnam deserunt assumenda neque eius!</p>
+                </dd>
+                <dt>Question 4</dt>
+                <dd>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta quidem recusandae explicabo rerum distinctio non laborum corrupti vel velit dicta reprehenderit, est fuga nobis magnam deserunt assumenda neque eius!</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="contact-box form-box">
+        <div class="container">
+            <h2 class="titlestyle2">Contact Us</h2>
+            <form action="#" method="POST" name="contact">
+                <div class="field-group">
+                    <label for="fullname">Fullname</label>
+                    <input type="text" name="fullname" id="fullname" value="" />
+                </div>
+                <div class="field-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" value="" />
+                </div>
+                <div class="field-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" value="" />
+                </div>
+                <div class="field-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" value="" />
+                </div>
+                <div class="field-group">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" value="" />
+                </div>
+                <div class="form-box__footer">
+                    <button type="submit" name="submit" class="button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- contact-box ends here -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__col">
+                    <a href="/" title="NCIT" class="site-logo">Logo</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col frame-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.213262371289!2d85.3298751!3d27.679802799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19ca771e9e55%3A0xc94f84d1f057520f!2sNagarjuna%20College%20of%20IT!5e0!3m2!1sen!2sus!4v1669964911949!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Copyright &copy;2022, All Rights Reserved!</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <!-- Loading custom scripts -->
+    <script src="./scripts.js" type="text/javascript"></script>
+</body>
+</html>
